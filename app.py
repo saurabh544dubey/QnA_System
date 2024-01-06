@@ -40,7 +40,7 @@ def generate_gemini_pro_response(user_input):
 
 #### pro tab
 user_input = pro.text_input("Ask any question" , key="pro_input" , placeholder="Provide the question here!")
-submit = pro.button("Generate Response")
+submit = pro.button("Generate Response" , key="pro_button")
 
 if submit:
     pro.success(generate_gemini_pro_response(user_input))
@@ -102,7 +102,7 @@ if uploaded_file is not None:
     
     
 # Submit Button
-submit = pro_vision.button("Generate Response")
+submit = pro_vision.button("Generate Result",key="vision_button")
 
 # Submit button is clicked
 if submit:
